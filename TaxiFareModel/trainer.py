@@ -52,8 +52,7 @@ class Trainer():
 
     @memoized_property
     def mlflow_client(self):
-        MLFLOW_URI = "https://mlflow.lewagon.ai/"
-        mlflow.set_tracking_uri(MLFLOW_URI)
+        mlflow.set_tracking_uri("https://mlflow.lewagon.ai/")
         return MlflowClient()
 
     @memoized_property
